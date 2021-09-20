@@ -24,7 +24,7 @@ export class Scene extends PHASER.Scene {
      * @param time - Overall time in ms since game started.
      * @param delta - Time in ms since last update call.
      */
-    public update(time, delta) {
+    public update(time: number, delta: number) {
         // Update the game logic here.
     }
 }
