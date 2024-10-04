@@ -12,10 +12,10 @@ export class Game extends PHASER.Game {
     physics: {
       default: 'arcade',
       arcade: {
-          gravity: { y: 300 }
+          gravity: { y: 0, x: 0 }
       }
     },
-    backgroundColor: '#000000',
+    backgroundColor: '#ff0000',
     scene: Scene
   }
 
