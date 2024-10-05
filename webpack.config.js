@@ -13,6 +13,13 @@ module.exports = {
     rules: [
     ],
   },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'assets'),
+    },
+    compress: true,
+    port: 9000,
+  },
   target: 'web',
   plugins: [
     new CleanWebpackPlugin(),
@@ -20,7 +27,8 @@ module.exports = {
       patterns: [
         {from: '*.css', context: 'src/'},
         {from: 'src/index.html'},
-        //{from: 'assets/gfx', to: 'assets/gfx/'},
+        {from: 'assets/gfx', to: 'assets/gfx/'},
+        {from: 'assets/audio', to: 'assets/audio/'},
       ],
     }),
   ],
