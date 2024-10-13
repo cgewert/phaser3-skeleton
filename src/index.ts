@@ -16,7 +16,7 @@ export class Game extends PHASER.Game {
       }
     },
     backgroundColor: '#ff0000',
-    scene: Scene
+    scene: [Scene]
   }
 
   constructor(){

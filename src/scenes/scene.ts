@@ -11,11 +11,20 @@ export class Scene extends PHASER.Scene {
         super(Scene.CONFIG);
     }
 
+    /* Scene initialization logic. */
+    public init(data: any) {
+
+    }
+
     public preload() {
         // Load scene assets here.
     }
 
-    public create() {
+    /* 
+     * Create your game objects here.
+     * @param data - Custom data provided to the scene.
+    */
+    public create(data: any) {
         // Create game objects here.
     }
  
