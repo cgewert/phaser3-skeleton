@@ -6,8 +6,10 @@ export class Game extends PHASER.Game {
     title: 'Put Game title here',
     type: PHASER.AUTO,
     scale: {
-      width: window.innerWidth,
-      height: window.innerHeight
+      mode: Phaser.Scale.FIT,
+      autoCenter: Phaser.Scale.CENTER_BOTH,
+      width: 1600,
+      height: 900
     },
     physics: {
       default: 'arcade',
