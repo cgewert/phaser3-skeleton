@@ -14,6 +14,7 @@ module.exports = {
     ],
   },
   devServer: {
+    watchFiles: "./src/..", // remove this line to disable Browser refresh
     static: {
       directory: path.join(__dirname, 'assets'),
     },
